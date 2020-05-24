@@ -19,8 +19,9 @@
 
 	function init(){
 		vidcont.style.display = 'none';
-		akhir.style.display = 'none';
-		input.style.display = "block";
+		akhir.style.display = "none";
+		input.style.display = "none";
+		preload.style.display = "block";
 	}
 
 	function displayWindowSize(){
