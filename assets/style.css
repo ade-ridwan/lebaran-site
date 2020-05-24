@@ -1,0 +1,193 @@
+body{
+	padding: 0px;
+	margin: 0px;
+}
+
+.top{
+	background-image: url('../assets/img/banner-lebaran.jpg');
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#preload{
+	position: absolute;
+    height: 100vh;
+    line-height: 100vh;
+    width: 100vw;
+    background: #000000E0;
+    backdrop-filter: blur(10px);
+    font-weight: lighter;
+    font-size: 20pt;
+    z-index: 100;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 1;
+    transition: all ease 1s;
+    font-family: monospace;
+}
+
+.notif{
+	position: absolute;	
+	width: 400px;	
+	height: 250px;
+	left: 50%;
+	bottom: 50%;
+	margin-bottom: -120px;
+	margin-left: -200px;	
+	background-color: white;
+}
+
+.notif .header{
+	padding: 5px;
+	background-color: #e7e7e7;
+}
+
+.notif .body{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.notif .footer{
+	padding-left: 30px;
+	padding-right: 30px;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 20px;
+}
+
+.btn-ok{
+	position: absolute;
+	bottom: 10px;
+	left: 165px;
+	background-color: #1f85de;
+	border: none;
+	color: white;
+	padding-left: 16px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 16px;
+}
+
+.btn-no{
+	position: absolute;
+	bottom: 10px;
+	background-color: #1f85de;
+	border: none;
+	color: white;
+	padding-left: 16px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 16px;
+}
+
+.btn-no-2{
+	position: absolute;
+	bottom: 40px;
+	background-color: #1f85de;
+	border: none;
+	color: white;
+	padding-left: 16px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 16px;
+}
+
+.btn-no-3{
+	position: absolute;
+	bottom: 40px;
+	left: 120px;
+	background-color: #1f85de;
+	border: none;
+	color: white;
+	padding-left: 16px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 16px;
+}
+
+.myoverlay{
+	position: absolute;
+	z-index: 10;
+}
+
+.btn-yes{
+	position: absolute;
+	left: 290px;
+	bottom: 10px;
+	background-color: green;
+	border: none;
+	color: white;
+	padding-left: 22px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 22px;
+}
+
+.center{
+	text-align: center;
+}
+
+.form-control{
+	width: 70%;
+	margin: 5px;
+}
+
+.vidcont {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;    
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.627);
+}
+
+.myoverlay {
+    backdrop-filter: blur(7px);
+}
+
+.divvideo {
+    width: 688px;
+    height: 576px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.wadah-mengetik
+{
+	top: 50%;
+	left: 50%;
+
+	position: absolute;
+	z-index: 100;
+	font-size: 22px;
+	width: 740px;
+	color: white;
+	white-space:nowrap;
+	overflow:hidden;
+	-webkit-animation: ketik 5s steps(50, end);
+	animation: ketik 5s steps(50, end);
+}
+
+@keyframes ketik{
+		from { width: 0; }
+}
+
+@-webkit-keyframes ketik{
+		from { width: 0; }
+}
+
+.akhir{
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	top: 5%;
+	position: absolute;
+	z-index: 4;
+	font-size: 1.5em;
+	color: white;
+}

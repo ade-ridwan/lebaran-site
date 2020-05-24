@@ -1,1 +1,64 @@
-hai
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Selamat Hari Raya Idul Fitri</title>	
+	<link rel="icon"
+		href="https://cdn.discordapp.com/attachments/502068238742585345/711805052230041620/kisspng-bedug-vector-graphics-image-ramadan-lebaran-in-in-5b74ca464df0f2.9576236215343806143193.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body onload="init()">
+<div id="preload">Miringkan Layar</div>
+<audio id="myAudio">
+		<source src="assets/musik/music.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<audio id="myOpening">
+		<source src="assets/musik/opening.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+<div class="vidcont myoverlay">
+		<div class="divvideo">
+			<video id="myVideo" width="100%" height="100%">
+				<source src="assets/video/video.mp4" type="video/mp4">
+				Your browser doe`s not support HTML5 video.
+			</video>
+		</div>
+	</div>
+<div id="notif" class="notif">
+	<div class="header center">
+		Selamat Datang
+	</div>
+	<div class="body">
+		<h4>Isi Nama Kamu Terlebih Dahulu !</h4>
+		<h5>Kalau sudah klik Oke ya!</h5>
+		Nama : <input type="text" id="nama" class="form-control">
+	</div>
+	<div class="footer">
+		<button class="btn-ok" id="btnok">OK</button>
+	</div>
+</div>
+<div id="ucapan" class="notif" style="display: none;">
+	<div class="header center">
+		Halo <span id="spanNama"></span>
+	</div>
+	<div class="body">
+		<h4>Selamat Hari Raya Idul Fitri ^.^</h4>
+		<h5>Di bulan yang berkah ini, semoga Allah SWT mengampuni dosa kita.Dan Menerima ibadah puasa kita. Maukah kamu mema'afkan ku?</h5>
+	</div>
+	<div class="footer">
+		<button class="btn-no" onmouseover="move()" onclick="move()" id="btnno">Gamau</button>
+		<button class="btn-no-2" onmouseover="move2()" onclick="move2()" id="btnno2" style="display: none">Gamau</button>
+		<button class="btn-no-3" onmouseover="move3()" onclick="move3()" id="btnno3" style="display: none">Gamau</button>
+		<button class="btn-yes" id="btnyes">Mau</button>
+	</div>
+</div>
+<div class="akhir" id="akhir">
+	<p class="animated bounceInLeft">Taqabbalallahu Minna Wa Minkum shiyamana wa shiyamakum.</p>
+	<h5 class="animated infinite bounce">Saya Ade Ridwan, menyadari bahwa saya memiliki banyak salah kepada kalian. Dengan demikian saya memohon maaf sebesar besarnya atas kesalahan saya dari ucapan mau perbuatan.</h5>
+</div>
+<div class="top"></div>
+<script type="text/javascript" src="assets/app.js"></script>
+</body>
+</html>
